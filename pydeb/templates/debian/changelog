@@ -1,0 +1,5 @@
+{{ pydeb['package-name'] }} ({{ pydeb['version'] }}) {{ pydeb['distribution'] }}; urgency=medium
+
+  * Pydeb released
+
+ -- {{ pydeb['maintainer'] }} <{{ pydeb['maintainer-email'] }}>  Wed, 21 Sep 2022 16:22:27 -0400

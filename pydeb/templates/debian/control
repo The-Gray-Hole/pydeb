@@ -1,0 +1,12 @@
+Source: {{ pydeb['package-name'] }}
+Section: unknown
+Priority: optional
+Maintainer: {{ pydeb['maintainer'] }} <{{ pydeb['maintainer-email'] }}>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Homepage: {{ pydeb['homepage'] }}
+
+Package: {{ pydeb['pydeb-prefix'] }}{{ pydeb['package-name'] }}
+Architecture: all
+Depends: {% for dep in pydeb['deb-dependencies'] %}{{ dep }},{% endfor %}
+Description: {{ pydeb['description'] }}

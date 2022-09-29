@@ -1,0 +1,16 @@
+pydeb:
+    version: "1.2.3"
+    distribution: "stable"
+    python-bin: "python3.8"
+    venv-path: "/usr/share/pydeb/my_package"
+    reset-venv-on-updates: no
+    maintainer: "Alejandro Alfonso"
+    maintainer-email: "alejandroalfonso1994@gmail.com"
+    description: "My amazing deb package"
+    deb-dependencies:
+        - "supervisor"
+        - "netplan.io (>= 0.99)"
+    homepage: "http://abc.com"
+    console-scripts:
+        - "pydeb"
+        - "other"
